@@ -9,10 +9,10 @@ body{
 
 .divPrincipal{
 
-    position: absolute;
+    position: relative;
     background-color: red;
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
 
     flex-direction: column;
@@ -51,18 +51,17 @@ body{
     display: flex;
     width: 100%;
     height: 100%;
-    border-style: solid black;
 
-    flex-wrap: wrap;
 
 }
 
 .divPrincipal .portadaAlbum img{
 
-    position: absolute;
+    position: relative;
     z-index: 1;
     width: 100%;
     height: 100%;
+
 }
 
 
@@ -78,6 +77,9 @@ body{
 
     height: 10%;
     width: 15%;
+
+    max-height: 40px;
+    max-width: 40px;
 
     border-radius: 50%;
 
@@ -114,11 +116,13 @@ body{
 .divPrincipal .datosArtista{
 
     width: 100%;
-    height: 20%;
-    position: fixed;
+    height: 40%;
+
+    gap: 55%;
+    position: relative;
     background-color: darkslategray;
+
     display: flex;
-    bottom: 0%;
     flex-direction: column;
 
     color: #ececec;
@@ -138,7 +142,10 @@ body{
 
     font-size: x-large;
     align-items: center;
+
     text-overflow: ellipsis;
+    overflow: hidden;
+
     white-space: nowrap;
     text-align: start;
 
