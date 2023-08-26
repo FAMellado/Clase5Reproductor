@@ -7,10 +7,17 @@ body{
 
 }
 
+.contenedor{
+
+    height: 100vh;
+    width: 100%;
+
+}
+
 .divPrincipal{
 
     position: relative;
-    background-color: red;
+    background-color: white;
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,20 +32,24 @@ body{
 
     color: white;
     background-color: rgba(0,0,0,0.7);
+
     position: absolute;
     display: flex;
+
     top: 0%;
     right: 0%;
+
     justify-content: end;
-    text-align: end;
-    font-size: x-large;
-    font-weight: bolder;
+    align-items: center;
+
+    font-size: large;
+    font-weight:lighter;
 
 
     z-index: 999;
 
     width: 100%;
-    padding-right: 5%;
+    padding-right: 3%;
 
 }
 
@@ -50,7 +61,7 @@ body{
     size-adjust: auto;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 75%;
 
 
 }
@@ -69,22 +80,27 @@ body{
 
     position: absolute;
     display: flex;
-    background-color: fuchsia;
+    background-color: deeppink;
+    color: white;
 
-    bottom: -5%;
+    bottom: 21%;
     right: 10%;
     z-index: 999;
 
     height: 10%;
     width: 15%;
 
-    max-height: 40px;
-    max-width: 40px;
+    max-height: 50px;
+    max-width: 50px;
 
     border-radius: 50%;
 
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.8);
+
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 
 
 
@@ -106,6 +122,9 @@ body{
     padding-left: 3%;
     gap: 10%;
 
+    align-items: center;
+    justify-content: start;
+
 
     color: white;
 
@@ -116,40 +135,75 @@ body{
 .divPrincipal .datosArtista{
 
     width: 100%;
-    height: 40%;
+    height: 25%;
 
-    gap: 55%;
     position: relative;
-    background-color: darkslategray;
+    background-color: rgb(35, 55, 55);
 
     display: flex;
     flex-direction: column;
+    
 
     color: #ececec;
 
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
 
 
 }
 
-.divPrincipal .datosArtista .nombreCancion, .divPrincipal .datosArtista .nombreArtista {
+.divPrincipal .datosArtista .nombreCancion{
 
     display: flex;
     position: relative;
-    max-width: 100%;
-    width: 100%;
-    height: 50%;
+    width: 90%;
+    height: 40%;
 
-    font-size: x-large;
+    
     align-items: center;
+    justify-content: start;
 
-    text-overflow: ellipsis;
-    overflow: hidden;
+    text-align: start;
+    
 
-    white-space: nowrap;
+
+}
+
+.divPrincipal .datosArtista .nombreArtista {
+
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 40%;
+
+    
+    align-items: center;
+    justify-content: start;
+
     text-align: start;
 
-    padding-left: 5%;
+}
 
+.cancion{
+
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Open Sans', sans-serif;
+    white-space: nowrap;
+
+    font-size: x-large;
+
+}
+
+.artista{
+
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Open Sans', sans-serif;
+    white-space: nowrap;
+
+    font-size: normal;
 
 }
