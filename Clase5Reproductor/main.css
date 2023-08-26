@@ -92,11 +92,16 @@ body{
     top: 10%;
     position: absolute;
     opacity: 100%;
-    display: inline-flex;
+    display: flex;
 
     width: 100%;
-    height: 20%;
+    height: 10%;
     z-index: 999 !important; 
+
+    padding-left: 3%;
+    gap: 10%;
+
+    text-rendering: ;
 
     color: white;
 
@@ -114,34 +119,28 @@ body{
     bottom: 0%;
     flex-direction: column;
 
+    color: #ececec;
+
     justify-content: start;
-    align-items: center;
 
 
 }
 
 .divPrincipal .datosArtista .nombreCancion, .divPrincipal .datosArtista .nombreArtista {
 
-    display: inline-flex;
+    display: flex;
     position: relative;
-    max-width: 90%;
-    width: 90%;
-    height: 40%;
-    justify-content: start;
-    align-self: center;
+    max-width: 100%;
+    width: 100%;
+    height: 50%;
 
     font-size: x-large;
-
+    align-items: center;
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: start;
-    text
+
+    padding-left: 5%;
+
 
 }
-
-
-
-
-
-
-
